@@ -24,8 +24,8 @@ h2 {
 }
 
 h3 {
+    text-align: center;
     font-family: 'Chewy', cursive;
-	text-decoration: underline;
 }
 
 .center {
@@ -56,4 +56,13 @@ table {
 
 hr {
     color: red;
+}
+
+#database li {
+    list-style-type: none;
+    margin-bottom: 0.9em;
+}
+
+#database li::first-letter {
+    font-weight: bold;
 }

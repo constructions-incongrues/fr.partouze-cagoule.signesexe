@@ -1,2 +1,4 @@
 /src/.env
 /src/vendor
+/src/public/database-new.txt
+/src/public/database-*.txt

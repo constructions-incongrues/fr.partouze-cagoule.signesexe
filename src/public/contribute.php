@@ -36,10 +36,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h1><span class="underline">S</span>ex <span class="underline">I</span>s <span class="underline">H</span>ell</h1>
 <?php if (isset($confirmation)): ?>
             <h2>
-                <p style="text-align:center; margin-top:0.1em; margin-top:0.1em;"><a href=""><img src="submit.png" value="CUM AS YOU ARE" title="ENCORE !"></a></p>
+                <p style="text-align:center; margin-top:0.1em; margin-top:0.1em;">
+                    <a href=""><img src="submit.png" value="CUM AS YOU ARE" title="ENCORE !"></a>
+                </p>
                 <audio src="audio/<?php echo sprintf('%s.mp3', rand(1, 6)) ?>" autoplay>
             </h2>
-            <h2 style="color:red;"><a href="" title="ENCORE !"><?php echo $confirmation; ?></a></h2>
+            <h2 style="color:red;"><?php echo $confirmation; ?><br><a href="" title="ENCORE !">ENCORE ?</a></h2>
+            <h3><a href="sextos.php">Consulter la base de SEXTOS</a></h3>
 <?php else: ?>
             <h2 style="font-size: 2.5em; margin-bottom:0.1em; margin-top:0.1em;">Let's make it <span style="color: red; font-weight: bold;"><a href=".">HOTER</a></span></h2>
             <br>
