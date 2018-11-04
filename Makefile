@@ -1,4 +1,3 @@
-.PHONY=attach build dev install
 SHELL=/bin/bash
 
 PORT ?= 8080
@@ -37,7 +36,7 @@ data-verified-uniq:
 	uniq src/public/database-verified.txt | sponge src/public/database-verified.txt
 
 deploy:
-	rsync $(RSYNC_OPTIONS) -avz --exclude /src/public/database* ./ -e 'ssh' partouze-cagoule@ftp.pastis-hosting.net:signesexe.partouze-cagoule.fr/ 
+	rsync $(RSYNC_OPTIONS) -avz --exclude /src/public/database* --exclude /.git ./ -e 'ssh' partouze-cagoule@ftp.pastis-hosting.net:signesexe.partouze-cagoule.fr/ 
 
 dev: build 
 	docker-compose up
@@ -48,3 +47,6 @@ install:
 
 permissions:
 	chmod 777 src/public/database*.txt
+
+ssh-prod:
+	ssh -t partouze-cagoule@ftp.pastis-hosting.net "cd signesexe.partouze-cagoule.fr/ && bash"
