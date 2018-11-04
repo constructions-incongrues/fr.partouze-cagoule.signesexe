@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+body {
+    background-color: pink;    
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.5em;
+}
+
+h1 {
+    text-align: center; 
+    font-family: 'Monoton', cursive;
+    font-size: 4em;
+    margin-top:0.1em;
+    margin-bottom:0.1em;
+}
+
+h2 {
+    font-family: 'Chewy', cursive;
+    background-color: black; color: pink;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+h3 {
+    font-family: 'Chewy', cursive;
+	text-decoration: underline;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid pink;
+    padding: 10px;
+}
+
+.underline {
+    color: red;
+}
+
+ .contribute {
+    color:red;
+    font-size: 1.5em;
+    width: 100%;
+    height: 1.6em;
+ }
+
+a, .red {
+    color: red;
+}
+
+table {
+    font-family: Chewy;
+}
+
+hr {
+    color: red;
+}

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: constructionsincongrues/signesexe  
+    ports:
+      - "8080:80"
+    volumes: 
+      - ${PWD}:/var/www/html

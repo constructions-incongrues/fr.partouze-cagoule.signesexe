@@ -1,0 +1,8 @@
+{
+    "require": {
+        "twilio/sdk": "^5.24"
+    },
+    "require-dev": {
+        "symfony/dotenv": "^4.1"
+    }
+}
