@@ -1,5 +1,5 @@
 FROM composer:1.7 as composer
-FROM php:7-apache-stretch
+FROM php:7.2-apache-stretch
 
 # Install composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
