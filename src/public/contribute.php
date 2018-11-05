@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h2 style="color:red;"><?php echo $confirmation; ?><br><a href="" title="ENCORE !">ENCORE ?</a></h2>
             <h3><a href="sextos.php">Consulter la base de SEXTOS</a></h3>
 <?php else: ?>
-            <h2 style="font-size: 2.5em; margin-bottom:0.1em; margin-top:0.1em;">Let's make it <span style="color: red; font-weight: bold;"><a href=".">HOTER</a></span></h2>
+            <h2 style="font-size: 2.5em; margin-bottom:0.1em; margin-top:0.1em;">Let's make it <span style="color: red; font-weight: bold;"><a href=".">HOTTER</a></span></h2>
             <br>
             <form action="" method="POST">
                 <span style="text-align:center;">
