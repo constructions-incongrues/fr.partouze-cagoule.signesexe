@@ -1,4 +1,7 @@
-<html>
+<?php 
+	$nbSubscribers = count(file(__DIR__.'/../data/subscribers.txt'));
+	$nbSextos = count(file(__DIR__.'/database-verified.txt'));
+?><html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Signé Sexe : Un sexto quotidien pour 1 euro par mois</title>
@@ -45,9 +48,9 @@
 			</div>
 
 			<h2>
-				<a href="#paypal" title="Changez de vie en un simple clic" target="_blank" onclick="javascript:document.getElementById('paypal').style.display = 'block'; return false;">S'INSCRIRE</a>
+				<a href="#paypal" title="Déjà <?php echo $nbSubscribers ?> inscrits !" target="_blank" onclick="javascript:document.getElementById('paypal').style.display = 'block'; return false;">S'INSCRIRE</a>
 				⋅
-				<a href="contribute.php" title="Sextribuez au projet !">CONTRIBUER</a></span>
+				<a href="contribute.php"  title="Déjà <?php echo $nbSextos ?> sextos !">CONTRIBUER</a></span>
 			</h2>
 		</body>
 </html>
