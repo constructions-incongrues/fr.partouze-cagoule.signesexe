@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Signé Sexe : Un sexto quotidien, à partir de 1 euro par mois</title>
+		<title>Signé Sexe : Un sexto quotidien pour 1 euro par mois</title>
 		<link href="style.css" rel="stylesheet"> 
 		<meta property="og:image" content="//submit.png" />
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -30,7 +30,7 @@
 			
 			<h2>Un <span class="red">sexto</span> quotidien
 			<br>
-			à partir de <span class="red">1 EUROS</span> par mois</h2>
+			pour <span class="red">1 EUROS</span> par mois</h2>
 
 			<div style="text-align:center;">
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal" style="display:none;">
@@ -43,7 +43,6 @@
 				<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
 				</form>
 			</div>
-
 
 			<h2>
 				<a href="#paypal" title="Changez de vie en un simple clic" target="_blank" onclick="javascript:document.getElementById('paypal').style.display = 'block'; return false;">S'INSCRIRE</a>

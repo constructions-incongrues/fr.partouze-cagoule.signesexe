@@ -13,7 +13,7 @@ $token = getenv('TWILIO_TOKEN'); // Your Auth Token from www.twilio.com/console
 // Input
 $destNumber = $_SERVER['argv'][1];
 $sextos = file(__DIR__.'/../public/database-verified.txt');
-$messageBody = sprintf("%s- https://ss.partouze-cagoule.fr", $sextos[array_rand($sextos)]);
+$messageBody = sprintf("%s- Signé S.", $sextos[array_rand($sextos)]);
 
 // Send the mesage !
 $client = new Twilio\Rest\Client($sid, $token);
@@ -21,9 +21,8 @@ $message = $client->messages->create(
   $destNumber, // Text this number
   array(
     'from' => '+33644640908', // From a valid Twilio number
-    'body' => $messageBody
+    'body' => html_entity_decode($messageBody, ENT_QUOTES | ENT_XML1, 'UTF-8')
   )
 );
 
-echo $message->sid, "\n";
-echo $messageBody, "\n";
+echo sprintf('Sexto envoyé - number="%s", twilio_sid="%s"', $destNumber, $message->sid), "\n";
