@@ -28,20 +28,22 @@
 
 	<body id="index">
 		<h1 style="margin-bottom:0.1em; margin-top:0.1em;"><span class="underline">S</span>igné <span class="underline">S</span>exe</h1>
+					<h2 style="background-color: transparent;color: #000;margin-top: -45px;">Un <span class="red">sexto</span> quotidien			pour <span class="red">1 EUROS</span> par mois</h2>
+
+
+		<h2 class="center" style="text-align:center; width:616px;margin-top: -20px;"><a href="">EN SAVOIR PLUS</a></h2>
+
 		<div class="center" style="text-align:center; width:634px;">
 			<img src="submit.png" title="https://fr.wikipedia.org/wiki/Victor_Vasarely">
 			
-			<h2>Un <span class="red">sexto</span> quotidien
 			<br>
-			pour <span class="red">1 EUROS</span> par mois</h2>
 
-			<div style="text-align:center;">
+			<div style="text-align:center;" class="inscription">
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal" style="display:none;">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="TQ5RJ2SCNBX2Y">
-				<input type="hidden" name="on0" value="Votre numéro de téléphone">Votre numéro de téléphone : <input type="text" name="os0" maxlength="200" required pattern="\+[0-9]{2}[0-9]{9}" placeholder="+33612341234">
-				<br>
-				<br>
+				<input type="hidden" name="on0" value="Votre numéro de téléphone">Votre numéro de téléphone : <input type="text" name="os0" maxlength="200" required pattern="\+[0-9]{2}[0-9]{9}" placeholder="+33612341234" onfocus="this.placeholder=''">
+			
 				<input type="submit" value="GO !">
 				<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
 				</form>
@@ -49,8 +51,12 @@
 
 			<h2>
 				<a href="#paypal" title="Déjà <?php echo $nbSubscribers ?> inscrits !" target="_blank" onclick="javascript:document.getElementById('paypal').style.display = 'block'; return false;">S'INSCRIRE</a>
-				⋅
-				<a href="contribute.php"  title="Déjà <?php echo $nbSextos ?> sextos !">CONTRIBUER</a></span>
+				⚲ 
+				<a href="contribute.php"  title="Déjà <?php echo $nbSextos ?> sextos !">CONTRIBUER</a>
+				<!-- ⚲ 
+				<a href="https://www.facebook.com/signesexto/">FACEBOOK</a>
+ -->
+
 			</h2>
 		</body>
 </html>
