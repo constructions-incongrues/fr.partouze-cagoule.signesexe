@@ -38,7 +38,7 @@ data-verified-dedup:
 deploy:
 	rsync $(RSYNC_OPTIONS) -avz --exclude /src/.env --exclude /src/public/database* --exclude /.git ./ -e 'ssh' partouze-cagoule@ftp.pastis-hosting.net:signesexe.partouze-cagoule.fr/ 
 
-dev: build 
+dev: build permissions
 	docker-compose up
 
 install:
@@ -46,6 +46,9 @@ install:
 	$(MAKE) permissions
 
 permissions:
+	touch src/data/subscribers.txt
+	touch src/public/database-new.txt
+	touch src/public/database-verified.txt
 	chmod 777 src/public/database*.txt
 
 ssh-prod:
