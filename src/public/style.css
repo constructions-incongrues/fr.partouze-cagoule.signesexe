@@ -70,22 +70,3 @@ hr {
 #database li::first-letter {
     font-weight: bold;
 }
-
-input[type=submit] {
-    font-family: 'Chewy', cursive;
-    font-size: 0.8em;
-    color: #000;
-    margin-left: -40px;
-}
-
-input {background-color: transparent;border-width: 0px;,color:#000;}
-.inscription {    font-family: 'Chewy', cursive;margin-top: 30px;
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: red;
-        font-family: 'Chewy', cursive;
-    font-size: 1.5em;
-
-    opacity: 1; /* Firefox */
-}
