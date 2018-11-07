@@ -13,6 +13,9 @@ clean:
 	docker-compose stop web
 	docker-compose rm -f web
 
+data-blacklist-show:
+	cat src/data/blacklist.txt
+
 data-new-dedup:
 	uniq src/public/database-new.txt | sponge src/public/database-new.txt
 
@@ -36,7 +39,7 @@ data-verified-dedup:
 	uniq src/public/database-verified.txt | sponge src/public/database-verified.txt
 
 deploy:
-	rsync $(RSYNC_OPTIONS) -avz --exclude /src/.env --exclude /src/public/database* --exclude /.git ./ -e 'ssh' partouze-cagoule@ftp.pastis-hosting.net:signesexe.partouze-cagoule.fr/ 
+	rsync $(RSYNC_OPTIONS) -avz --exclude /src/.env --exclude /src/public/database* --exclude /src/data/blacklist.txt --exclude /.git ./ -e 'ssh' partouze-cagoule@ftp.pastis-hosting.net:signesexe.partouze-cagoule.fr/ 
 
 dev: build permissions
 	docker-compose up
@@ -47,9 +50,11 @@ install:
 
 permissions:
 	touch src/data/subscribers.txt
+	touch src/data/blacklist.txt
+	chmod -R 777 src/data
 	touch src/public/database-new.txt
 	touch src/public/database-verified.txt
-	chmod 777 src/public/database*.txt
+	chmod 777 src/public/database*
 
 ssh-prod:
 	ssh -t partouze-cagoule@ftp.pastis-hosting.net "cd signesexe.partouze-cagoule.fr/ && bash"
