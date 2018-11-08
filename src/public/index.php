@@ -28,7 +28,7 @@
 
 	<body id="index">
 		<h1 style="margin-bottom:0.1em; margin-top:0.1em;"><span class="underline">S</span>igné <span class="underline">S</span>exe</h1>
-					<h2 style="background-color: transparent;color: #000;margin-top: -45px;">Un <span class="red">sexto</span> quotidien			pour <span class="red">1 EUROS</span> par mois</h2>
+					<h2 style="background-color: transparent;color: #000;margin-top: -45px;">Un <span class="red">sexto</span> quotidien			pour <span class="red">1 EURO</span> par mois</h2>
 
 		<!--
 		<h2 class="center" style="text-align:center; width:616px;margin-top: -20px;"><a href="apropos.php">EN SAVOIR PLUS</a></h2>
