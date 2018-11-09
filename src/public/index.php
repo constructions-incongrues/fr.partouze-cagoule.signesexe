@@ -67,7 +67,7 @@ if (filter_input(INPUT_GET, 'sexto') == 'added') {
 					<div class="logo" title="Victor Vasarely">
 <?php endif; ?>
 					</div>
-                    <h4>Contribuer gratuitement et avec entrain</h4>
+                    <h4 id="contribute">Contribuer gratuitement et avec entrain</h4>
                     <p class="incentive">C'e<span class="red">s</span>t l'occa<span class="red">s</span>ion d'envoyer d'inventive<span class="red">s</span> cochonnerie<span class="red">s</span> à de parfait<span class="red">s</span> inconnu<span class="red">s</span>.</p>
                     <span class="form">
                         <form method="POST" action="api.php">
@@ -85,17 +85,25 @@ if (filter_input(INPUT_GET, 'sexto') == 'added') {
                         </p>
                     </legend>
 
-                    <h4><span class="red">S</span>'in<span class="red">s</span>crire pour 1€ par moi<span class="red">s</span></h4>
+                    <hr>
+
+                    <h4 id="subscribe"><span class="red">S</span>'in<span class="red">s</span>crire pour 1€ par moi<span class="red">s</span></h4>
                     <p class="incentive">C'e<span class="red">s</span>t l'occa<span class="red">s</span>ion de recevoir chaque jour un me<span class="red">s</span><span class="red">s</span>age qui - à défaut d'être excitant - <span class="red">s</span>era au moin<span class="red">s</span> étrange et pénétrant.</p>
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="TQ5RJ2SCNBX2Y">
-                        <input type="hidden" name="on0" value="Votre numéro de téléphone"><span style="font-weight: Alegreya;"></span> <input type="text" name="os0" maxlength="200" required pattern="\+[0-9]{2}[0-9]{9}" placeholder="+33612341234" onfocus="this.placeholder=''">                    
+                        <input type="hidden" name="on0" value="Votre numéro de téléphone"><span style="font-weight: Alegreya;"></span> <input type="text" name="os0" maxlength="200" required pattern="\+[0-9]{2}[0-9]{9}" placeholder="+33612341234" onfocus="this.placeholder=''" title="Le numéro de téléphone doit être au format +33612341234">
                         <input type="submit" value="⚲" title="GO !">
                         <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
                     </form>
+
                     <legend>
                         <p>Vous deviendrez ain<span class="red">s</span>i notre <?php echo $nbSubscribers ?>e <span class="red">s</span>ou<span class="red">s</span>cripteur.</p>
+                        <p>L'abonnement e<span class="red">s</span>t payant pour deux rai<span class="red">s</span>on<span class="red">s</span> :<br>
+                            - L'envoi de<span class="red">s</span> me<span class="red">s</span><span class="red">s</span>age nou<span class="red">s</span> coûte<br>
+                            - Le <span class="red">s</span>exe <span class="red">s</span>ur internet e<span class="red">s</span>t une activité traditionnellement mercantile
+                        </p>
+                        </ul>
                     </legend>
                 </div>
 
