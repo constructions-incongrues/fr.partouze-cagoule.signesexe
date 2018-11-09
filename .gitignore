@@ -1,5 +1,6 @@
 /src/.env
-/src/vendor
-/src/public/database-new.txt
-/src/public/database-*.txt
 /src/data/*.txt
+/src/public/.htpasswd
+/src/public/database-*.txt
+/src/public/database-new.txt
+/src/vendor

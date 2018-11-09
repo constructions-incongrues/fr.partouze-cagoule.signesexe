@@ -48,7 +48,7 @@ a:hover {
     text-decoration: none;
 }
 
-textarea {
+#index textarea {
     outline: none;
     width: 100%;
     height: 15%;
@@ -112,4 +112,19 @@ div.logo {
 
 div.logo:hover, div.logo.inverted {
     background-image: url('../img/logo-inverted.png');
+}
+
+#moderate textarea {
+    width: 100%;
+    padding: 1em;
+}
+
+#moderate textarea[readonly] {
+    color: #333;
+    background-color: #ddd;
+    border: none;
+}
+
+#moderate input[text] {
+    width: 100%;
 }

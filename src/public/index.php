@@ -31,7 +31,16 @@ if (filter_input(INPUT_GET, 'sexto') == 'added') {
         <meta name="theme-color" content="#000">
         <link href="css/simple-grid.min.css" rel="stylesheet"> 
         <link href="css/main.css" rel="stylesheet">
-        <script src="node_modules/artyom.js/build/artyom.window.min.js"></script>
+		<script src="node_modules/artyom.js/build/artyom.window.min.js"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128952125-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-128952125-1');
+		</script>
     </head>
 
     <body id="index">
@@ -62,7 +71,7 @@ if (filter_input(INPUT_GET, 'sexto') == 'added') {
                     <p class="incentive">C'e<span class="red">s</span>t l'occa<span class="red">s</span>ion d'envoyer d'inventive<span class="red">s</span> cochonnerie<span class="red">s</span> à de parfait<span class="red">s</span> inconnu<span class="red">s</span>.</p>
                     <span class="form">
                         <form method="POST" action="api.php">
-                            <input type="text" name="sexto" placeholder="Remplis-moi le champ, Bébé" required>
+                            <input type="text" name="sexto" placeholder="Remplis-moi, idole de mes nuits" required>
                             <input type="submit" value="⚲" title="GO !">
                         </form>
                     </span>
@@ -102,13 +111,13 @@ if (filter_input(INPUT_GET, 'sexto') == 'added') {
                     
                     <hr>
 
-                    <h4>Envoyez des instructions par SMS au <a href="tel:+33644640908">+33 6 44 64 09 08</a></h4>
+                    <h4>Envoyez des in<span class="red">s</span>truction<span class="red">s</span> par <span class="red">S</span>M<span class="red">S</span> au <a href="tel:+33644640908">+33 6 44 64 09 08</a></h4>
                     <dl>
-                        <dt><strong>CONTRIB</strong> suivi d'un message</dt>
-                        <dd>Permet de contribuer à la base de données</dd>
+                        <dt><strong>CONTRIB</strong> <span class="red">s</span>uivi d'un me<span class="red">s</span><span class="red">s</span>age</dt>
+                        <dd>Permet de contribuer à la ba<span class="red">s</span>e de donnée<span class="red">s</span></dd>
 
-                        <dt><strong>CASUFFIT</strong></dt>
-                        <dd>Permet de se désinscrire à tout jamais</dd>
+                        <dt><strong>CA<span class="red">S</span>UFFIT</strong></dt>
+                        <dd>Permet de <span class="red">s</span>e dé<span class="red">s</span>in<span class="red">s</span>crire à tout jamai<span class="red">s</span></dd>
                     </dl>
                 </div>
             </div>
@@ -120,6 +129,7 @@ if (filter_input(INPUT_GET, 'sexto') == 'added') {
                 </div>
             </div>
         </div>
-        <script src="js/behaviors.js"></script>
+
+		<script src="js/behaviors.js"></script>
     </body>
 </html>

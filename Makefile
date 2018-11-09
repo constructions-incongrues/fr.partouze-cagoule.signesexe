@@ -39,7 +39,7 @@ data-verified-dedup:
 	uniq src/public/database-verified.txt | sponge src/public/database-verified.txt
 
 deploy:
-	rsync $(RSYNC_OPTIONS) -avz --exclude /src/.env --exclude /src/public/database* --exclude /src/data/blacklist.txt --exclude /.git ./ -e 'ssh' partouze-cagoule@ftp.pastis-hosting.net:signesexe.partouze-cagoule.fr/ 
+	rsync $(RSYNC_OPTIONS) -avz --exclude /src/.env --exclude /src/public/.htpasswd --exclude /src/public/database* --exclude /src/data/* --exclude /.git ./ -e 'ssh' partouze-cagoule@ftp.pastis-hosting.net:signesexe.partouze-cagoule.fr/ 
 
 dev: build permissions
 	docker-compose up

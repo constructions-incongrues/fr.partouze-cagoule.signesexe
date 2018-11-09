@@ -7,4 +7,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         header('Location:/?sexto=added');
     }
+
+    $new = trim(filter_input(INPUT_POST, 'new', FILTER_SANITIZE_STRING));
+    if ($new) {
+        file_put_contents(__DIR__.'/database-verified.txt', $new."\n", FILE_APPEND);
+        file_put_contents(__DIR__.'/database-new.txt', "");
+        header('Location:/moderate.php?new=accepted');
+    }
 }

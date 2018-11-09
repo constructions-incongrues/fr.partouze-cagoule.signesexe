@@ -1,0 +1,7 @@
+<Files moderate.php>
+    AuthName "Prompt"
+    AuthType Basic
+    AuthUserFile /var/www/vhosts/partouze-cagoule.fr/signesexe.partouze-cagoule.fr/src/public/.htpasswd
+    Require valid-user
+</Files>
+ 
