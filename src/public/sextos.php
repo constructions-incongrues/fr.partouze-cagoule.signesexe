@@ -21,6 +21,7 @@
         <meta name="msapplication-TileColor" content="#000">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#000">
+        <script src="node_modules/artyom.js/build/artyom.window.min.js"></script>
 	</head>
 
     <body id="database">
@@ -28,11 +29,12 @@
 		<div class="center" style="width:634px;">
             <h2>Les <span class="red">SEXTOS</span> validés <br>par notre équipe de <span class="red">MODÉRATEURS</span></h2>
             <h3><a href="contribute.php">PROPOSEZ UN SEXTO</a></h3>
-            <ul>
+            <ul id="sextos">
 <?php foreach (file(__DIR__.'/database-verified.txt') as $sexto): ?>
                 <li><?php echo $sexto ?></li>
 <?php endforeach ?>
             </ul>
         </div>
+        <script src="js/behaviors.js"></script>
     </body>
 </html>

@@ -46,6 +46,7 @@ dev: build permissions
 
 install:
 	cd src && composer install
+	cd src && npm install
 	$(MAKE) permissions
 
 permissions:
