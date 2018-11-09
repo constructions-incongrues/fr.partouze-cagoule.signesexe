@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Signé Sexe : Un sexto quotidien, à partir de 1 euro par mois</title>
+		<title>Signé Sexe : Un sexto quotidien, à partir de 1 € par mois</title>
 		<link href="style.css" rel="stylesheet"> 
 		<meta property="og:image" content="//submit.png" />
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -24,7 +24,7 @@
 	</head>
 
     <body id="database">
-        <h1 style="margin-bottom:0.1em; margin-top:0.1em;"><span class="underline">S</span>igné <span class="underline">S</span>exe</h1>
+        <h1><span class="underline">S</span>igné <span class="underline">S</span>exe</h1>
 		<div class="center" style="width:634px;">
             <h2>Les <span class="red">SEXTOS</span> validés <br>par notre équipe de <span class="red">MODÉRATEURS</span></h2>
             <h3><a href="contribute.php">PROPOSEZ UN SEXTO</a></h3>

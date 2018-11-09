@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
-@import url('https://fonts.googleapis.com/css?family=Chewy');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 
 body {
     background-color: pink;    
-	font-family: 'Barlow', sans-serif;
+	font-family: 'Alegreya', sans-serif;
 	font-size: 1.5em;
     font-weight: normal;
 }
@@ -18,20 +18,21 @@ h1 {
 }
 
 h2 {
-    font-family: 'Chewy', cursive;
-    background-color: black; color: pink;
+    font-family: 'Alegreya', cursive;
+    background-color: pink; 
+    color: black;
     text-align: center;
     padding: 0.5rem;
 }
 
 h3 {
     text-align: center;
-    font-family: 'Chewy', cursive;
+    font-family: 'Alegreya', cursive;
 }
 
 .center {
     margin: auto;
-    width: 50%;
+    width: 634px;
     border: 3px solid pink;
     padding: 10px;
 }
@@ -55,7 +56,7 @@ h2 a { color: red;font-weight: normal;}
 h2 a:hover { text-decoration: none;}
 
 table {
-    font-family: Chewy;
+    font-family: Alegreya;
 }
 
 hr {
